@@ -11,9 +11,7 @@ services:
   - type: web
     name: 'hikma-health-backend'
     runtime: python
-    # Uncomment if you want to deploy to the free tier first.
-    # NOTE: free tier has degraded performance making it unusable in real world settings
-    # plan: free
+
     buildCommand: pip install -r requirements.txt
 
     startCommand: ./app/run.sh
